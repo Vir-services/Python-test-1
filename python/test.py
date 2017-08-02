@@ -1,14 +1,29 @@
-import platform
-import subprocess
-  
-def checksystem():
-    if 'Windows' in platform.system() :
-        subprocess.call("cls", shell=True) # windows上执行cls命令
-    if 'Linux' in platform.system() :    
-        subprocess.call("clear") # linux上借助于call执行clear命令  
+#!/bin/env python
+#-*- coding:utf-8 -*-
 
-checksystem()    
+'''
+a = ['张','三','丰','呢']
+for i in a:
+    print(i)
+    print(a.index(i))
 
 
- 
+a = ['张','三','丰','呢']
+for x in range(len(a)):
+    print(a[x]) 
+
+
+
+a = {'a':123,'b':456,'c':789}
+for i in a:
+    print(a[i])
+    
+print(a.items())
+print(a.keys())
+
+
+a = {'a':123,'b':456,'c':789}
+for k,v in a.items():
+    print(k,v)
+'''
 
